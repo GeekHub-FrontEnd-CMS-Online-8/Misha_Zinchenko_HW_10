@@ -1,11 +1,11 @@
 .work{
   background: url(../img/bg_work.png) ;
   background-size: cover;
-}
-.work .menu_1 a:hover{
-  background-color: #a1ca6c;
-  transition: .5s ease;
-}
-.work .menu_2{
-  background-color: #a1ca6c;
+  .menu_2{
+    background-color: #a1ca6c;
+  }
+  .menu_1 a:hover{
+    background-color: #a1ca6c;
+    transition: .5s ease;
+  }
 }
