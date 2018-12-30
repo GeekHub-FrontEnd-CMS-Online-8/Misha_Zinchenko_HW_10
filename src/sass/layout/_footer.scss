@@ -1,0 +1,21 @@
+footer{
+  background: #68a097;
+  padding: 41px 0 49px 0;
+  .footer__link{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .footer__link__radius{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #82c8bd;
+    margin-left: 40px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+}

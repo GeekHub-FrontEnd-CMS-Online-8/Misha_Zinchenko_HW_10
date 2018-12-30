@@ -1,11 +1,23 @@
 .contacts{
   background: url(../img/bg_contacts.png) ;
   background-size: cover;
+  padding-bottom: 81px;
+  text-align: center;
   .menu_1 a:hover{
     background-color: #82c8bd;
     transition: .5s ease;
   }
   .menu_2{
     background-color: #82c8bd;
+    text-align: start;
+  }
+}
+.contact__us{
+  p{
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
