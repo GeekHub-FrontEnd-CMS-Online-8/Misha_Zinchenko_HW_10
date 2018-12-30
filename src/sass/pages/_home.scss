@@ -38,17 +38,20 @@
     margin-top: -130px;
   }
   .prev, .next {
-    cursor: pointer;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 60px;
-    transition: 0.75s;
-    opacity: 0.4;
-    &:hover {
-      opacity: 1;
-    }
-  }
+    display: none;
+    @media screen and (min-width:1100px){
+        display: block;
+        cursor: pointer;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 60px;
+        transition: 0.75s;
+        opacity: 0.4;
+        &:hover {
+          opacity: 1;
+        }
+}}
   .slogan {
     position: absolute;
     color: #74c7d5;
