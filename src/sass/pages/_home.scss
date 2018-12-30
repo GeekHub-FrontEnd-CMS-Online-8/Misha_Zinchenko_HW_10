@@ -1,5 +1,5 @@
 .home{
-  background: url(../img/bg_home.png) ;
+  background: url(../img/bg_home.png) center center;
   background-size: cover;
   padding-bottom: 91px;
   .menu_2{
@@ -8,5 +8,114 @@
   .menu_1 a:hover{
     background-color: #74c7d5;
     transition: .5s ease;
+  }
+}
+.box {
+  .slider {
+    width: 480px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.4);
+    opacity: 0.85;
+    border-radius: 10px;
+    @media screen and (min-width:1100px){
+      width: 840px;
+      height: 170px;
+      margin-top: 240px;
+    }
+  }
+  .slider-item {
+    display: none;
+  }
+  .www{
+    width: 1345px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -130px;
+  }
+  .prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 60px;
+    transition: 0.75s;
+    opacity: 0.4;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .slogan {
+    position: absolute;
+    color: #74c7d5;
+    font-weight: bold;
+    font-size: 70px;
+    margin-left: 230px;
+    margin-top: 60px;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    @media screen and (min-width: 1100px){
+      font-size: 130px;
+      margin-left: 400px;
+      margin-top: 20px;
+    }
+  }
+  .title {
+    position: absolute;
+    padding-top: 25px;
+    margin-left: -30px;
+    line-height: 40px;
+    width: 250px;
+    text-align: right;
+    color: #74c7d5;
+    font-size: 40px;
+    @media screen and (min-width: 1100px){
+      font-size: 60px;
+      width: 370px;
+      line-height: 70px;
+      margin-top: -10px;
+      margin-left: -30px;
+    }
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 145px; 
+    margin-left: 40px;
+    background-color: #717171;
+    opacity: 0.7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #74c7d5;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

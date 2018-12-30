@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Acrostia</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+</head>
 <body>
     <section class="home">
+        <h6>/</h6>
         <div class="content">
             <header>
                 <div class="logo"><img src="src/img/logo.png" alt=""></div>
@@ -37,7 +39,42 @@
                 </nav>
             </header>
         </div>    
+
+        <div class="box">
+
+            <ul class="slider">
+
+              <li class="slider-item  fade">
+                <p class="title">GOOD IDEAS <span class="title_2">comes</span></p>
+                <span class="slogan">FIRST!</span>
+              </li>
+          
+              <li class="slider-item  fade">
+                <p class="title">GOOD IDEAS <span class="title_2">comes</span></p>
+                <span class="slogan">FIRS!</span>
+              </li>
+          
+              <li class="slider-item  fade">
+                <p class="title">GOOD IDEAS comes</p>
+                <span class="slogan">FIR!</span>
+              </li> 
+            </ul>
+            <div class="www">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+          
+          
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
     </section>
 
+    <script src="src/js/main.js"></script>
+
+    
 </body>
 </html>
