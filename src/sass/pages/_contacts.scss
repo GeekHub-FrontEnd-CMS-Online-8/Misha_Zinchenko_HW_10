@@ -12,6 +12,9 @@
     text-align: start;
   }
 }
+
+
+
 .contact__us{
   p{
     color: #ffffff;
@@ -19,5 +22,106 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+}
+.contact__communication{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width:1100px){
+    flex-direction: row;
+  } 
+}
+.communication{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align-last: left;
+  text-align: center;
+  .communication__title{
+    color: #fff;
+    font: 400 30px "Lato";
+  }
+}
+.address{
+  margin-top: -20px;
+  .address__lead{
+    color: #c0dfda;
+    font: 700 20px "Lato";
+  }
+  .address__text{
+    color: #fff;
+    font: 400 16px "Lato";
+    line-height: 21px;
+  } 
+}
+.contact-list{
+  margin-left: -40px;
+  .contact-list__item{
+    color: #fff;
+    font: 400 16px "Lato";
+  }
+  .contact-list-text{
+      color: #d0efea;
+      display: inline-block;
+    }
+    .contact-list-underline{
+      text-decoration: underline;
+    }}
+
+.form{
+  .form__text{
+    margin-right: 6px;
+  }
+  .form__text, .form__email{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 40px;
+    @media screen and (min-width:1100px){
+      width: 260px;
+    }
+  }
+  @media screen and (min-width:1100px){
+    width: 550px;
+  }
+  textarea{
+    width: 100%;
+    height: 160px;
+    resize: none;
+    margin-bottom: 15px;
+    @media screen and (min-width:1100px){
+      width: 98%;
+    }
+  }
+  textarea, .form__text, .form__email{
+    background-color: #68a097;
+    border: none;
+    border-radius: 3px;
+    color: #82c8bd;
+    font: 400 16px "Lato";
+    line-height: 21px;
+    padding: 5px;
+  }
+  textarea:focus, .form__text:focus, .form__email:focus{
+    background-color: #f6f6f6;
+    border: none;
+    outline: none;
+  }
+  .form__submit{
+    width: 260px;
+    height: 50px;
+    color: #fff;
+    font: 400 26px "Lato-Black";
+    margin: 0 auto;
+    display: block;
+    padding: 5px 50px;
+    box-shadow: inset 0 -4px 0 rgba(178, 74, 80, 0.5);
+    background-color: #df5c64;
+    border: 4px;
+    cursor: pointer;
+  }
+  .form__submit:hover{
+    transform: scale(1.1);
+    background: #c43640;
   }
 }
